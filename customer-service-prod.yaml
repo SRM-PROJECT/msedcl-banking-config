@@ -1,0 +1,32 @@
+#spring.application.name=02_CustomerService
+#spring.datasource.url=jdbc:oracle:thin:@10.10.196.37:1521:testdev1
+#spring.datasource.username=GREENHYDRO_DEV
+#spring.datasource.password=GREENHYDRO_DEV
+#spring.datasource.driver-class-name=oracle.jdbc.OracleDriver
+#logging.file.name=logs/customers.log
+#springdoc.swagger-ui.enabled=false
+
+spring:
+    application:
+        name: "customer-service"
+    datasource:
+        url: jdbc:oracle:thin:@10.10.196.37:1521:testdev1
+        driver-class-name: oracle.jdbc.OracleDriver
+        username: GREENHYDRO_DEV
+        password: GREENHYDRO_DEV
+springdoc:
+    api-docs:
+        enabled: false
+logging:
+  file:
+    name:logs/customers.log
+build:
+    version: "1.0"
+customer:
+    message: "Welcome to MSEDCL bank customer created REST API--PROD"
+    contactDetails:
+      name: "pooja"
+      email: "pooja@msedcl.in"
+    onCallSupport:
+      -1234567890
+      -9876543210
