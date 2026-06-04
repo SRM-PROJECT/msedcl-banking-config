@@ -6,23 +6,7 @@
 #logging.file.name=logs/customers.log
 #springdoc.swagger-ui.enabled=false
 
-spring:
-    application:
-        name: "customer-service"
-    datasource:
-        url: jdbc:oracle:thin:@10.10.196.37:1521:testdev1
-        driver-class-name: oracle.jdbc.OracleDriver
-        username: GREENHYDRO_DEV
-        password: GREENHYDRO_DEV
-    profiles:
-      active:
-        - "prod"
-springdoc:
-    api-docs:
-        enabled: false
-logging:
-  file:
-    name:logs/customers.log
+
 build:
     version: "1.0"
 customer:
