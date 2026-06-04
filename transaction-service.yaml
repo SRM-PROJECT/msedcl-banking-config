@@ -1,0 +1,33 @@
+#spring.application.name=04_TransactionService
+#spring.datasource.url=jdbc:oracle:thin:@10.10.196.37:1521:testdev1
+#spring.datasource.username=VPTS
+#spring.datasource.password=VPTS
+#spring.datasource.driver-class-name=oracle.jdbc.OracleDriver
+#logging.file.name=logs/transaction.log
+#server.port=8082
+spring:
+    application:
+      name: "transaction-service"
+    datasource:
+      url: jdbc:oracle:thin:@10.10.196.37:1521:testdev1
+      driver-class-name: oracle.jdbc.OracleDriver
+      username: VPTS
+      password: VPTS
+    profiles:
+      active:
+        - "prod"
+server: 
+    port: 8082
+logging:
+    file:
+      name: logs/transaction.log
+build:
+    version: "1.0"
+transaction:
+    message: "Welcome to MSEDCL bank customer created REST API TRANSACTION DEFAULT"
+    contactDetails:
+      name: "prachi"
+      email: "prachi@msedcl.in"
+    onCallSupport:
+      -1234567890
+      -9876543210
