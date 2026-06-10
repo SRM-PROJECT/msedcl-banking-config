@@ -20,8 +20,6 @@ springdoc:
 logging:
   file:
     name:logs/customers.log
-server: 
-    port: 8989
 build:
     version: "1.0"
 customer:
